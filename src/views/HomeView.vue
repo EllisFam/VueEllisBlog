@@ -67,18 +67,18 @@ export default {
 <style scoped>
 /* Home Page */
 .hero {
-  /* background-image: url(../img/IMG_5287.jpg); */
+  background-image: url(../../public/img/IMG_5287.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 400px;
+  height: 740px;
 }
 h1 {
   font-family: "Pacifico", cursive !important;
 }
 .hero h1 {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 350px;
   font-size: 150px;
   color: rgba(255, 255, 255, 0.479);
 }
