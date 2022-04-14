@@ -3,10 +3,11 @@ import App from "./App.vue";
 import router from "./router";
 
 Vue.config.productionTip = false;
+import mock from "./mock-data.js";
 
 let data = {
   BlogPosts: mock,
-}
+};
 
 new Vue({
   router,

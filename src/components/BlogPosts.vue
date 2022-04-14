@@ -2,16 +2,14 @@
   <div>
     <div class="row">
       <div class="col blog-preview">
-        <div v-for="post in blogPosts" :key="post.id">
+        <div v-for="post in BlogPosts" :key="post.id">
           <h2>{{ post.summary }}</h2>
+          <p>{{ post.date }}</p>
           <br />
           <p>
-            This is the first blog post on our new website. We are so excited
-            about this! Caden has always been better at keeping a journal than
-            Courtney has, but we are hoping this website will help us to
-            memorialize some of the highlights of our relationship...
-            <a href="post.html">(more)</a>
+            {{ post.post }}
           </p>
+          <img src="post.image" />
         </div>
       </div>
     </div>
@@ -28,3 +26,18 @@ export default {
 };
 </script>
 
+<style scoped>
+.blog-preview {
+  border: 3px solid rgba(0, 0, 0, 0.664);
+  margin: 30px 15%;
+}
+.blog-preview a {
+  color: #6c6955;
+  font-weight: bold;
+}
+.blog-preview a :hover {
+  color: #5a6a6e;
+  font-weight: bold;
+  text-decoration: none;
+}
+</style>

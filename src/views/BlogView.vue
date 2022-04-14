@@ -6,30 +6,28 @@
       <p>{{ quote }}</p>
       <p>{{ author }}</p>
     </div>
-    <div class="row">
-      <div class="col blog-preview">
-        <h2>First Blog Post</h2>
-        <br />
-        <p>
-          This is the first blog post on our new website. We are so excited
-          about this! Caden has always been better at keeping a journal than
-          Courtney has, but we are hoping this website will help us to
-          memorialize some of the highlights of our relationship...
-          <a href="post.html">(more)</a>
-        </p>
-      </div>
-    </div>
+    <BlogPosts :BlogPosts="BlogPosts" />
   </div>
 </template>
 
 <script>
+import BlogPosts from "../components/BlogPosts.vue";
 export default {
   name: "BlogView",
+  components: {
+    BlogPosts,
+  },
   data() {
     return {
       quote: "",
       author: "",
     };
+  },
+
+  computed: {
+    BlogPosts() {
+      return this.$root.$data.BlogPosts;
+    },
   },
 
   created() {
