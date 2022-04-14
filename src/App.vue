@@ -16,14 +16,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <router-link class="nav-link" to="/gallery">Gallery</router-link>
-            </li>
             <li>
               <router-link class="nav-link" to="/blog">Blog</router-link>
             </li>
             <li>
-              <router-link class="nav-link" to="/about">About</router-link>
+              <router-link class="nav-link" to="/contact">Contact</router-link>
             </li>
           </ul>
         </div>
@@ -95,7 +92,6 @@
   margin-top: auto;
   width: 100%;
 }
-
 .footer-element {
   display: flex;
   align-items: center;
@@ -114,5 +110,18 @@
 .footer span a:hover {
   text-decoration: none;
   color: whitesmoke;
+}
+/* Tablet Styles  */
+@media only screen and (min-width: 450px) and (max-width: 991px) {
+  .footer span {
+    font-size: 15px;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 992px) {
+  .footer span {
+    font-size: 17px;
+  }
 }
 </style>

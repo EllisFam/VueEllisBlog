@@ -71,7 +71,7 @@ export default {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 740px;
+  height: 400px;
 }
 h1 {
   font-family: "Pacifico", cursive !important;
@@ -103,5 +103,36 @@ h1 {
 .about p a:hover {
   text-decoration: none;
   color: blue;
+}
+/* Tablet Styles  */
+@media only screen and (min-width: 450px) and (max-width: 991px) {
+  .hero {
+    background-image: url(../../public/img/IMG_5287.jpg);
+    width: 100%;
+    height: 500px;
+    margin-top: 72px;
+  }
+  .hero h1 {
+    padding-top: 35px;
+    font-size: 150px;
+    color: rgba(255, 255, 255, 0.479);
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 992px) {
+  .hero {
+    background-image: url(../../public/img/blogbanner3.svg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    margin-top: 70px;
+  }
+  .hero h1 {
+    padding-top: 40px;
+    font-size: 200px;
+    color: rgba(255, 255, 255, 0.479);
+  }
 }
 </style>
