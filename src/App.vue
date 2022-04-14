@@ -1,33 +1,35 @@
 <template>
   <div id="app">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-      <router-link class="navbar-brand" to="/">The Ellis'</router-link>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <router-link class="nav-link" to="/gallery">Gallery</router-link>
-          </li>
-          <li>
-            <router-link class="nav-link" to="/blog">Blog</router-link>
-          </li>
-          <li>
-            <router-link class="nav-link" to="/about">About</router-link>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <router-view />
+    <div class="spacer">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <router-link class="navbar-brand" to="/">The Ellis'</router-link>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <router-link class="nav-link" to="/gallery">Gallery</router-link>
+            </li>
+            <li>
+              <router-link class="nav-link" to="/blog">Blog</router-link>
+            </li>
+            <li>
+              <router-link class="nav-link" to="/about">About</router-link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <router-view />
+    </div>
     <div class="footer">
       <div class="footer-element">
         <span>&copy; 2022</span>
@@ -36,13 +38,21 @@
         <span>Caden and Courtney Ellis</span>
       </div>
       <div class="footer-element">
-        <span><a href="https://github.com/EllisFam">GitHub Link</a></span>
+        <span
+          ><a href="https://github.com/EllisFam/VueEllisBlog.git"
+            >GitHub Link</a
+          ></span
+        >
       </div>
     </div>
   </div>
 </template>
 
 <style>
+.spacer {
+  min-height: 90vh;
+}
+
 .page {
   background-color: whitesmoke;
 }

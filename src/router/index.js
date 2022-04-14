@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import AboutView from "../views/AboutView.vue";
+import ContactView from "../views/ContactView.vue";
 import BlogView from "../views/BlogView.vue";
 import GalleryView from "../views/GalleryView.vue";
 
@@ -14,9 +14,9 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/about",
-    name: "about",
-    component: AboutView,
+    path: "/contact",
+    name: "contact",
+    component: ContactView,
   },
   {
     path: "/blog",
