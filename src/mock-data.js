@@ -5,8 +5,7 @@ let mock = [
     date: "4-23-19",
     summary: "We started dating in April of 2019",
     post: "Vel dolor dolorem ab debitis porro qui dicta atque aut quod aperiam qui ducimus nemo eum sint totam est ratione quia. Eum numquam earum ut voluptatem voluptatum qui veniam maxime est alias dolor est velit minus hic consequatur architecto? Et iusto voluptatem quo quis officiis in dolorum ipsum. ",
-    image:
-      "../public/img/dating/58300819992__75BD1B95-4F1F-4A9D-93B2-03B65C8FC44E.JPG",
+    image: "/dating/58300819992__75BD1B95-4F1F-4A9D-93B2-03B65C8FC44E.JPG",
   },
   {
     id: 2,

@@ -9,7 +9,7 @@
           <p>
             {{ post.post }}
           </p>
-          <img src="post.image" />
+          <img :src="'../../public/img' + post.image" />
         </div>
       </div>
     </div>
@@ -39,5 +39,9 @@ export default {
   color: #5a6a6e;
   font-weight: bold;
   text-decoration: none;
+}
+
+img {
+  width: 100px;
 }
 </style>
