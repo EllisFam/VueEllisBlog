@@ -6,6 +6,19 @@
       <p>{{ quote }}</p>
       <p>{{ author }}</p>
     </div>
+    <div class="row">
+      <div class="col blog-preview">
+        <h2>First Blog Post</h2>
+        <br />
+        <p>
+          This is the first blog post on our new website. We are so excited
+          about this! Caden has always been better at keeping a journal than
+          Courtney has, but we are hoping this website will help us to
+          memorialize some of the highlights of our relationship...
+          <a href="post.html">(more)</a>
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -53,5 +66,36 @@ export default {
 .quote-of-day {
   font-style: italic;
   text-align: center;
+}
+/* Blog */
+.blog-preview {
+  border: 3px solid rgba(0, 0, 0, 0.664);
+  margin: 30px 15%;
+}
+.blog-preview a {
+  color: #6c6955;
+  font-weight: bold;
+}
+.blog-preview a :hover {
+  color: #5a6a6e;
+  font-weight: bold;
+  text-decoration: none;
+}
+.blog-post {
+  border: 3px solid rgba(0, 0, 0, 0.664);
+  margin: 30px 15%;
+  padding: 7px 10px;
+}
+.blog-post h4 {
+  font-size: 15px;
+}
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#author {
+  padding-left: 25px;
 }
 </style>
