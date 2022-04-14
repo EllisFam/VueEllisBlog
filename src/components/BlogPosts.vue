@@ -5,14 +5,16 @@
         <div v-for="post in BlogPosts" :key="post.id">
           <h2>{{ post.summary }}</h2>
           <p>{{ post.date }}</p>
+          <img :src="post.image" />
           <br />
           <p>
             {{ post.post }}
           </p>
-          <img :src="'../../public/img' + post.image" />
         </div>
       </div>
     </div>
+    <hr />
+    <br />
   </div>
 </template>
 
