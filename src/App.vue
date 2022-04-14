@@ -36,7 +36,9 @@
       </div>
       <div class="footer-element">
         <span
-          ><a href="https://github.com/EllisFam/VueEllisBlog.git"
+          ><a
+            href="https://github.com/EllisFam/VueEllisBlog.git"
+            target="_blank"
             >GitHub Link</a
           ></span
         >
